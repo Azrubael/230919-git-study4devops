@@ -1,5 +1,6 @@
 Saturn has many moons:
 -   Minas
--   Dione
+-   Tethys
+-   Phoebe
 -   Rhea
 -   Hyperion
