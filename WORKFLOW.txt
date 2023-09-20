@@ -100,13 +100,12 @@ Date:   Tue Sep 19 19:28:18 2023 +0300
 commit 95f9b4a663f5c750ee373352e7b5eef6e62ac8e1
 Author: Azrubael <i0638464000@gmail.com>
 Date:   Tue Sep 19 19:04:38 2023 +0300
-    Step #01. Initial commit with a bunch of the empty files.
+    Step #00. Initial commit with a bunch of the empty files.
     
     $ git log --oneline
 c8aacc1 (HEAD -> main, origin/main) Step #01. Saturn moons.
 95f9b4a Step #01. Initial commit with a bunch of the empty files.
-uh@uh-K53SD:/mnt/SSDATA/CODE/DevOpsCompl20/230919-git-study4devops
-$ git show c8aacc1
+    $ git show c8aacc1
 commit c8aacc1dfd658582c4662788a121263d5a3639f9 (HEAD -> main, origin/main)
 Author: Azrubael <i0638464000@gmail.com>
 Date:   Tue Sep 19 19:28:18 2023 +0300
@@ -123,4 +122,35 @@ index 0000000..db52c57
 +=================
 ...
 
-    $ 
+        $ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 708 bytes | 354.00 KiB/s, done.
+From github.com:...230919-git-study4devops
+   ef22bd0..e0eebef  main       -> origin/main
+Updating ef22bd0..e0eebef
+Fast-forward
+ saturn9.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+ 
+    $ git log
+commit e0eebef87271cb97a4c9b1f7872f89e1e4ac4597 (HEAD -> main, origin/main)
+Author: Azrubael <116581559+Azrubael@users.noreply.github.com>
+Date:   Tue Sep 19 19:40:08 2023 +0300
+    Step #04. More Saturn's moons
+    Updated saturn9.py
+commit ef22bd0fbd88f5519cc783c5726ea6cbc9b3a308
+Author: Azrubael <i0638464000@gmail.com>
+Date:   Tue Sep 19 19:35:09 2023 +0300
+    Step #02. Updated Saturn's moons.
+commit c8aacc1dfd658582c4662788a121263d5a3639f9
+Author: Azrubael <i0638464000@gmail.com>
+Date:   Tue Sep 19 19:28:18 2023 +0300
+    Step #01. Saturn moons.
+commit 95f9b4a663f5c750ee373352e7b5eef6e62ac8e1
+Author: Azrubael <i0638464000@gmail.com>
+Date:   Tue Sep 19 19:04:38 2023 +0300
+    Step #00. Initial commit with a bunch of the empty files.
+    
