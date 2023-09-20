@@ -284,3 +284,23 @@ Fast-forward
  rename saturn9.py => saturn1.py (100%)
  delete mode 100644 saturn6.py
  delete mode 100644 saturn8.py
+ 
+ 
+ ...
+ 
+ 
+     $ git log --oneline --graph --all
+*   546af0f (HEAD -> main) Merge branch 'sprint1'
+|\  
+| * 15d423c (origin/sprint1, sprint1) sprint1. '.gitignore'
+* | 7ed59dc (origin/main) Step #07. New files 'jupiter.rb.
+* | 2fa91c3 Step #06. Updated WORKLOG.txt after merging 'sprint1' into 'main'.
+|/  
+| * 7d26c58 (origin/sprint2, sprint2) sprint2.01. Sun and other planets.
+|/  
+* 447b01a sprint1.01. Some drastical changes.
+* 3311908 Step 05. Minor update of WORKFLOW.txt.
+* e0eebef Step #04. More Saturn's moons
+* ef22bd0 Step #02. Updated Saturn's moons.
+* c8aacc1 Step #01. Saturn moons.
+* 95f9b4a Step #01. Initial commit with a bunch of the empty files.
