@@ -154,3 +154,133 @@ Author: Azrubael <i0638464000@gmail.com>
 Date:   Tue Sep 19 19:04:38 2023 +0300
     Step #00. Initial commit with a bunch of the empty files.
     
+    
+
+# 2023-09-20    10:09
+=====================
+
+
+* 123 - Branches & More.mp4
+---------------------------
+
+    $ cd .../230919-git-study4devops/
+    $ git branch -c sprint1
+# created a new branch `sprint1`
+    $ git branch -a
+* main          <--- current branch
+  sprint1
+  remotes/origin/main
+    $ git checkout sprint1
+Switched to branch 'sprint1'
+Your branch is up to date with 'origin/main'.
+    $ git rm saturn4.py saturn6.py saturn8.py
+rm 'saturn4.py'
+rm 'saturn6.py'
+rm 'saturn8.py'
+    $ git status
+On branch sprint1
+Your branch is up to date with 'origin/main'.
+  Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    saturn4.py
+	deleted:    saturn6.py
+	deleted:    saturn8.py
+    $ git mv saturn9.py saturn1.py
+    $ touch jupiter{1...4}.rb
+    $ git add .
+    $ git commit -m "sprint1.01. Some drastical changes."
+[sprint1 447b01a] sprint1.01. Some drastical changes.
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename saturn4.py => jupiter{1...4}.rb (100%)
+ rename saturn9.py => saturn1.py (100%)
+ delete mode 100644 saturn6.py
+ delete mode 100644 saturn8.py
+ 
+# pushing some new drastically changes to remote repo
+    $ git push origin sprint1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 306 bytes | 306.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'sprint1' on GitHub by visiting:
+remote:     .../230919-git-study4devops/pull/new/sprint1
+remote: 
+To .../230919-git-study4devops.git
+ * [new branch]      sprint1 -> sprint1
+
+# You can create directly in remote another branch `sprint2`
+    $ git pull
+    $ git checkout sprint2
+Branch 'sprint2' set up to track remote branch 'sprint2' from 'origin'.
+Switched to a new branch 'sprint2'
+    $ touch sun earth venus mercury
+    $ ls -l
+total 9
+-rwxrwxrwx 1 root root    0 Sep 20 11:45 earth
+drwxrwxrwx 1 root root    0 Sep 19 18:59 jupiter
+-rwxrwxrwx 1 root root    0 Sep 20 11:36 jupiter{1...4}.rb
+-rwxrwxrwx 1 root root    0 Sep 20 11:45 mercury
+drwxrwxrwx 1 root root    0 Sep 19 18:58 nebula
+drwxrwxrwx 1 root root    0 Sep 19 18:58 pluto
+-rwxrwxrwx 1 root root   53 Sep 19 19:40 saturn1.py
+-rwxrwxrwx 1 root root   77 Sep 19 19:32 saturn3.py
+-rwxrwxrwx 1 root root    0 Sep 19 18:55 saturn5.py
+-rwxrwxrwx 1 root root    0 Sep 19 18:55 saturn7.py
+-rwxrwxrwx 1 root root    0 Sep 20 11:45 sun
+-rwxrwxrwx 1 root root    0 Sep 20 11:45 venus
+-rwxrwxrwx 1 root root 4894 Sep 20 11:27 WORKFLOW.txt
+    $ git add .
+    $ git commit -m "sprint2.01. Sun and other planets.:
+> "
+[sprint2 1954fa5] sprint2.01. Sun and other planets.:
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 earth
+ create mode 100644 mercury
+ create mode 100644 sun
+ create mode 100644 venus
+    $ git commit --amend
+[sprint2 7d26c58] sprint2.01. Sun and other planets.
+ Date: Wed Sep 20 11:47:03 2023 +0300
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 earth
+ create mode 100644 mercury
+ create mode 100644 sun
+ create mode 100644 venus
+    $ git push origin sprint2       <--- pushing a new branch `sprint2`
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 312 bytes | 312.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Azrubael/230919-git-study4devops.git
+   447b01a..7d26c58  sprint2 -> sprint2
+
+    $ git branch -a
+  main
+  sprint1
+* sprint2
+  remotes/origin/main
+  remotes/origin/sprint1
+  remotes/origin/sprint2
+
+    $ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+    $ git merge sprint1
+Updating 3311908..447b01a
+Fast-forward
+ saturn4.py => jupiter{1...4}.rb | 0
+ saturn9.py => saturn1.py        | 0
+ saturn6.py                      | 0
+ saturn8.py                      | 0
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename saturn4.py => jupiter{1...4}.rb (100%)
+ rename saturn9.py => saturn1.py (100%)
+ delete mode 100644 saturn6.py
+ delete mode 100644 saturn8.py
