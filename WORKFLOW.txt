@@ -159,9 +159,8 @@ Date:   Tue Sep 19 19:04:38 2023 +0300
 # 2023-09-20    10:09
 =====================
 
-
-* 123 - Branches & More.mp4
----------------------------
+* Branches & More
+-----------------
 
     $ cd .../230919-git-study4devops/
     $ git branch -c sprint1
@@ -358,4 +357,28 @@ Merge made by the 'ort' strategy.
 * ef22bd0 Step #02. Updated Saturn's moons.
 * c8aacc1 Step #01. Saturn moons.
 * 95f9b4a Step #01. Initial commit with a bunch of the empty files.
+
+    $ cd ..
+    $ ls
+'10 - AWS Part 1'                               230919-git-study4devops
+'12 - Tools Prerequisites for Ubuntu 20.html'  '26 - resumes'
+'13 - GIT'                                     '4 - Linux'
+'1-3 Intro'                                    '5 - Vagrant & Linux Servers'
+ 230824-VagrantVMs                             '6 - VProfile Project Setup Manual Automated'
+ 230830-VProfile                               '7 - Networking'
+ 230903-javacode                               '8 - Introducing Containers'
+ 230904-containerintro                         '9 - Bash Scripting'
+ 230905-EMart                                   img
+ 230906-bash-scrits                             samples_IaC
+
+# Now we're going to remove entire local repo and we're going to clone it after that
+    $ rm -rf 230919-git-study4devops
+    $ git clone https://github.com/Azrubael/230919-git-study4devops.git
+Cloning into '230919-git-study4devops'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 44 (delta 20), reused 33 (delta 11), pack-reused 0
+Receiving objects: 100% (44/44), 8.41 KiB | 195.00 KiB/s, done.
+Resolving deltas: 100% (20/20), done.
 
