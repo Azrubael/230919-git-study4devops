@@ -304,3 +304,58 @@ Fast-forward
 * ef22bd0 Step #02. Updated Saturn's moons.
 * c8aacc1 Step #01. Saturn moons.
 * 95f9b4a Step #01. Initial commit with a bunch of the empty files.
+
+    $ git commit -m "stprin2. A few files 'jupiter*.rb'"
+[sprint2 c1cae24] stprin2. A few files 'jupiter*.rb'
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ rename jupiter{1...4}.rb => jupiter1.rb (100%)
+ create mode 100644 jupiter2.rb
+ create mode 100644 jupiter3.rb
+ create mode 100644 jupiter4.rb
+ create mode 100644 jupiter5.rb
+    $ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+    $ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+    $ git merge sprint2
+Merge made by the 'ort' strategy.
+ earth       | 0
+ jupiter2.rb | 0
+ jupiter3.rb | 0
+ jupiter4.rb | 0
+ jupiter5.rb | 0
+ mercury     | 0
+ sun         | 0
+ venus       | 0
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 earth
+ create mode 100644 jupiter2.rb
+ create mode 100644 jupiter3.rb
+ create mode 100644 jupiter4.rb
+ create mode 100644 jupiter5.rb
+ create mode 100644 mercury
+ create mode 100644 sun
+ create mode 100644 venus
+ 
+    $ git log --oneline --graph --all
+*   1fe3017 (HEAD -> main) Merge branch 'sprint2'
+|\  
+| * c1cae24 (sprint2) stprin2. A few files 'jupiter*.rb'
+| * 7d26c58 (origin/sprint2) sprint2.01. Sun and other planets.
+* | 702b8c8 (origin/main) Step #09. Updater WORKFLOW.txt.
+* |   546af0f Merge branch 'sprint1'
+|\ \  
+| * | 15d423c (origin/sprint1, sprint1) sprint1. '.gitignore'
+| |/  
+* | 7ed59dc Step #07. New files 'jupiter.rb.
+* | 2fa91c3 Step #06. Updated WORKLOG.txt after merging 'sprint1' into 'main'.
+|/  
+* 447b01a sprint1.01. Some drastical changes.
+* 3311908 Step 05. Minor update of WORKFLOW.txt.
+* e0eebef Step #04. More Saturn's moons
+* ef22bd0 Step #02. Updated Saturn's moons.
+* c8aacc1 Step #01. Saturn moons.
+* 95f9b4a Step #01. Initial commit with a bunch of the empty files.
+
